@@ -70,12 +70,12 @@
             </p>
             <fieldset>
                 <legend>Пол:</legend>
-                <lable><input type="radio" name="gender" value="male">Мужской</lable>
-                <lable><input type="radio" name="gender" value="female">Женский</lable>
+                <lable><input type="radio" name="gender" value="male" required>Мужской</lable>
+                <lable><input type="radio" name="gender" value="female"required>Женский</lable>
             </fieldset>
             <p>
                 <lable for="languages">Любимый язык программирования:</lable>
-                <select id="languages" name="languages[]" multiple size="11">
+                <select id="languages" name="languages[]" multiple size="11" required>
                     <option value="cpp">C++</option>
                     <option value="js">JavaScript</option>
                     <option value="go">Golang</option>
@@ -88,16 +88,16 @@
             </p>
             <p>
                 <label for="bio">Биография:</label>
-                <textarea id="bio" name="bio" rows="5" cols="40"></textarea>
+                <textarea id="bio" name="bio" rows="5" cols="40" required></textarea>
             </p>
             <p>
                 <lable>
-                    <input type="checkbox" name="contract" value="yes">
+                    <input type="checkbox" name="contract" value="yes" required>
                     С контрактом ознакомлен(а)
                 </lable>
             </p>
             <p>
-                <button type="submit">Сохранить</button>
+                <button type="submit" required>Сохранить</button>
             </p>
             <script>
                 const today = new Date().toISOString().split('T')[0];
